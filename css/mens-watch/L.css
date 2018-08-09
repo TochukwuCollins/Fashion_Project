@@ -1,0 +1,2780 @@
+/* ======================
+              CSS INDEX
+ ====================== */
+/*
+*1. Theme Default CSS (body,link Color,Section,Footer etc)
+*2. Top Link Area
+     2.1. Nav links
+     2.2. Social links
+     2.3. Animated link Area
+*3. Header Area
+     3.1. Logo
+            3.1.1. Logo Animation
+    3.2. Main Menu Area
+            3.2.1. Main Menu Animation.
+            3.2.1. DropDown Menu.
+     3.3.Settings Area
+           3.3.1.Settings icon
+           3.3.1.Settings Animation
+           3.3.2. Search box icon
+           3.3.3. cart button icon
+*4.   Header Image Area
+        4.1.   Home Area
+*5.   Content Area
+       5.1. Content Area Aside
+       5.2. Content Area Main Content
+*6.   Footer Area
+*7.   Go to up 
+*8.   Hide Sidnav up 
+*/
+
+/* ======================
+      1. Theme Default CSS                
+   ====================== */
+
+html{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    color: white;
+    line-height: 1.15;
+    font-size: 100%;
+    font-family: Verdana;
+}
+
+/* ======================
+      2. Link Area                
+   ====================== */
+
+.co-topLinks{
+    width: 100%;
+    background-color: black;
+    height: 25px;
+}
+
+#po-linkContainer{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#po-linkContainer::after{
+    content: "";
+    clear: both;
+}
+
+/* ======================
+      2.1 Nav links                
+   ====================== */
+
+#po-left-link{
+    float: left;
+    width: 20%;
+    text-align: left;
+    animation: tada 2s ease;
+}
+
+#po-top-link{
+    display: inline-block;
+    margin-top: 3px;
+}
+
+#po-top-link:hover{
+    animation: tada 2s;
+}
+
+#po-left-link nav a{
+    text-decoration: none;
+    font-size: 9px;
+    color: white;
+    padding-left: 10px;
+    text-transform: uppercase !important;
+}
+
+/* ======================
+      2.2 Social Links                
+   ====================== */
+
+#po-right-social{
+    float: right;
+    width: 15%;
+    height: 18px;
+    animation: tada 2s ease;
+    text-align: right;
+}
+
+#po-right-social nav{
+    margin-top: 3px;
+}
+
+#po-right-social nav a{
+    text-decoration: none;
+    font-size: 11px;
+    color: white;
+    padding-left: 9px;
+}
+
+#po-right-social nav a:hover{
+   color: orange;
+}
+
+/* ======================
+      2.3 Animating Link Area                
+   ====================== */
+
+@-webkit-keyframes tada {
+ from {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+ }
+ 10%,
+ 20% {
+ -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+ }
+ 30%,
+ 50%,
+ 70%,
+ 90% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ }
+ 40%,
+ 60%,
+ 80% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ }
+ to {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+ }
+}
+
+@keyframes tada {
+ from {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+ }
+ 10%,
+ 20% {
+ -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+ }
+ 30%,
+ 50%,
+ 70%,
+ 90% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ }
+ 40%,
+ 60%,
+ 80% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ }
+ to {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+ }
+}
+ 
+/* ======================
+      3. Header Area                
+   ====================== */
+
+header{
+    width: 100%;
+    height: 30vh;
+}
+
+/* ======================
+      3.1 Logo                
+   ====================== */
+
+#po-logo{
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#po-logo h1{
+    color: black;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0px black;
+    -webkit-animation: jackInTheBox 4s;
+    -moz-animation: jackInTheBox 4s;
+    -ms-animation: jackInTheBox 4s;
+    animation: jackInTheBox 4s;
+}
+
+#po-logo a{
+    text-decoration: none;
+}
+
+#po-logo img{
+     -webkit-animation: rotateIn 4s;
+    -moz-animation: rotateIn 4s;
+    -ms-animation: rotateIn 4s;
+    animation: rotateIn 4s;
+}
+
+#po-logo img:hover{
+    -webkit-animation: rotateIn 4s;
+    -moz-animation: rotateIn 4s;
+    -ms-animation: rotateIn 4s;
+    animation: tada 4s;
+}
+
+/* ======================
+      3.1.1 Logo Animation               
+   ====================== */
+
+@-webkit-keyframes jackInTheBox {
+ from {
+ opacity: 0;
+ -webkit-transform: scale(0.1) rotate(30deg);
+ transform: scale(0.1) rotate(30deg);
+ -webkit-transform-origin: center bottom;
+ transform-origin: center bottom;
+ }
+ 50% {
+ -webkit-transform: rotate(-10deg);
+ transform: rotate(-10deg);
+ }
+ 70% {
+ -webkit-transform: rotate(3deg);
+ transform: rotate(3deg);
+ }
+ to {
+ opacity: 1;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+ }
+}
+
+@keyframes jackInTheBox {
+ from {
+ opacity: 0;
+ -webkit-transform: scale(0.1) rotate(30deg);
+ transform: scale(0.1) rotate(30deg);
+ -webkit-transform-origin: center bottom;
+ transform-origin: center bottom;
+ }
+ 50% {
+ -webkit-transform: rotate(-10deg);
+ transform: rotate(-10deg);
+ }
+ 70% {
+ -webkit-transform: rotate(3deg);
+ transform: rotate(3deg);
+ }
+ to {
+ opacity: 1;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+ }
+}
+
+@-webkit-keyframes rotateIn {
+ from {
+ -webkit-transform-origin: center;
+ transform-origin: center;
+ -webkit-transform: rotate3d(0, 0, 1, -200deg);
+ transform: rotate3d(0, 0, 1, -200deg);
+ opacity: 0;
+ }
+ to {
+ -webkit-transform-origin: center;
+ transform-origin: center;
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+ opacity: 1;
+ }
+}
+
+@keyframes rotateIn {
+ from {
+ -webkit-transform-origin: center;
+ transform-origin: center;
+ -webkit-transform: rotate3d(0, 0, 1, -200deg);
+ transform: rotate3d(0, 0, 1, -200deg);
+ opacity: 0;
+ }
+ to {
+ -webkit-transform-origin: center;
+ transform-origin: center;
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+ opacity: 1;
+ }
+}
+
+
+/* ======================
+      3.2 Main Menu Area                
+   ====================== */
+
+#po-navbar{
+    width: 1000px;
+    height: 20px;
+    margin: 0px auto;
+    margin-top: 70px;
+    
+}
+
+#po-navbar::after{
+    content: '';
+    clear: both;
+}
+
+/* ======================
+      3.2. Nav Area                
+   ====================== */
+
+#po-left-nav{
+    width: 60%;
+    float: left;
+    height: 20px;
+    text-align: left;
+    -webkit-animation: bounce 2s;
+    -moz-animation: bounce 2s;
+    -ms-animation: bounce 2s;
+    animation: bounce 2s;
+}
+
+/* ======================
+      3.2.1 Nav Animation                
+   ====================== */
+
+@-webkit-keyframes bounce {
+ from,
+ 20%,
+ 53%,
+ 80%,
+ to {
+ -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+ }
+ 40%,
+ 43% {
+ -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ -webkit-transform: translate3d(0, -30px, 0);
+ transform: translate3d(0, -30px, 0);
+ }
+ 70% {
+ -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ -webkit-transform: translate3d(0, -15px, 0);
+ transform: translate3d(0, -15px, 0);
+ }
+ 90% {
+ -webkit-transform: translate3d(0, -4px, 0);
+ transform: translate3d(0, -4px, 0);
+ }
+}
+
+@keyframes bounce {
+ from,
+ 20%,
+ 53%,
+ 80%,
+ to {
+ -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+ }
+ 40%,
+ 43% {
+ -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ -webkit-transform: translate3d(0, -30px, 0);
+ transform: translate3d(0, -30px, 0);
+ }
+ 70% {
+ -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ -webkit-transform: translate3d(0, -15px, 0);
+ transform: translate3d(0, -15px, 0);
+ }
+ 90% {
+ -webkit-transform: translate3d(0, -4px, 0);
+ transform: translate3d(0, -4px, 0);
+ }
+}
+
+/* ======================
+      3.2.2 Nav Area Menu               
+   ====================== */
+
+#po-left-nav nav #po-home,#po-left-nav nav #po-men,#po-left-nav nav #po-women,#po-left-nav nav #po-kid,#po-left-nav nav #po-category,#po-left-nav nav #po-latest,#po-left-nav nav #po-bar{
+    display: inline-block;
+    padding-left: 35px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+#po-left-nav nav #po-men{
+    color: red;
+}
+
+#po-left-nav nav #po-home a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#po-left-nav nav #po-home a:hover{
+    color: red;
+}
+
+#po-left-nav nav #po-men .co-arrow-down{
+    position: absolute;
+    top: 2px;
+    left: 65px;
+}
+
+#po-left-nav nav #po-women .co-arrow-down{
+    position: absolute;
+    top: 2px;
+    left: 87px;
+}
+
+#po-left-nav nav #po-kid .co-arrow-down{
+    position: absolute;
+    top: 2px;
+    left: 60px;
+}
+
+#po-left-nav nav #po-category .co-arrow-down{
+     position: absolute;
+     top: 2px;
+    left: 128px;
+}
+
+#po-left-nav nav #po-latest .co-arrow-down{
+    position: absolute;
+    top: 2px;
+    left: 88px;
+}
+
+#po-left-nav nav #po-latest .co-dot{
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: red;
+    border-radius: 50%;
+    top: -2px;
+    right: -7px;
+}
+
+/* ======================
+      Hover Effect Nav Area               
+   ====================== */
+
+#po-left-nav nav #po-home:hover,#po-left-nav nav #po-men:hover,#po-left-nav nav #po-women:hover,#po-left-nav nav #po-kid:hover,#po-left-nav nav #po-category:hover,#po-left-nav nav #po-latest:hover,#po-left-nav nav #po-bar:hover{
+   color: red;
+}
+
+/* ======================
+     Dropdown Nav Menu - Men           
+   ====================== */
+
+#po-men .co-dropdown{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    padding: 20px 0px 30px 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    top: 25px;
+    -webkit-animation: flip .8s;
+    -moz-animation: flip .8s;
+    -ms-animation: flip .8s;
+    animation: flip .8s;
+}
+
+#po-men .co-dropdown li{
+    padding: 4px;
+    padding-bottom: 14px;
+    position: relative;
+    width: 100%;
+}
+
+#po-men .co-dropdown li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#po-men .co-dropdown li a .co-dot{
+     position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-men .co-dropdown li a .co-list{
+    padding-left: 20px;
+}
+
+#po-men .co-dropdown li:hover .co-dot{
+    background-color: red;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+
+#po-men .co-dropdown li:hover .co-list{
+     padding-left: 28px;
+     transition: all .3s linear;
+}
+
+#po-men .co-dropdown li a:hover .co-list{
+    color: red;
+}
+
+#po-men .co-drop{
+    display: none;
+}
+
+/*---------------------------------------------*/
+/*            Men Clothing SubMenu     */
+/*----------------------------------------------*/
+
+#po-men .co-dropdown #po-sub-home{
+    position: relative;
+}
+
+#po-men .co-dropdown #po-sub-home #po-right{
+    float: right;
+    margin-right: 15px;
+}
+
+#po-men .co-dropdown #po-home-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: 160px;
+    top: 0px;
+    display: none;
+    animation: top .4s linear;
+}
+
+#po-men .co-dropdown #po-home-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-men .co-dropdown #po-home-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-men .co-dropdown #po-home-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-men .co-dropdown #po-home-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-men .co-dropdown #po-home-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-men .co-dropdown #po-home-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-men .co-dropdown #po-home-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-men .co-dropdown #po-sub-home:hover #po-home-submenu{
+    display: block;
+}
+
+/*---------------------------------------------*/
+/*            Men Shoe SubMenu     */
+/*----------------------------------------------*/
+
+#po-men .co-dropdown #po-sub-shoe{
+    position: relative;
+}
+
+#po-men .co-dropdown #po-sub-shoe #po-right{
+    float: right;
+    margin-right: 15px;
+}
+
+#po-men .co-dropdown #po-shoe-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: 160px;
+    top: 0px;
+    display: none;
+}
+
+#po-men .co-dropdown #po-shoe-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-men .co-dropdown #po-shoe-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-men .co-dropdown #po-shoe-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-men .co-dropdown #po-shoe-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-men .co-dropdown #po-shoe-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-men .co-dropdown #po-shoe-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-men .co-dropdown #po-shoe-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-men .co-dropdown #po-sub-shoe:hover #po-shoe-submenu{
+    display: block;
+}
+
+/* ======================
+     Dropdown Nav Menu - Women           
+   ====================== */
+
+#po-women .co-dropdown{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    padding: 20px 0px 30px 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    top: 25px;
+    -webkit-animation: flip .8s;
+    -moz-animation: flip .8s;
+    -ms-animation: flip .8s;
+    animation: flip .8s;
+}
+
+#po-women .co-dropdown li{
+    padding: 4px;
+    padding-bottom: 14px;
+    position: relative;
+    width: 100%;
+}
+
+#po-women .co-dropdown li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#po-women .co-dropdown li a .co-dot{
+     position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-women .co-dropdown li a .co-list{
+    padding-left: 20px;
+}
+
+#po-women .co-dropdown li:hover .co-dot{
+    background-color: red;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+
+#po-women .co-dropdown li:hover .co-list{
+     padding-left: 28px;
+     transition: all .3s linear;
+}
+
+#po-women .co-dropdown li a:hover .co-list{
+    color: red;
+}
+
+#po-women .co-drop{
+    display: none;
+}
+
+/*---------------------------------------------*/
+/*      Women Clothing SubMenu     */
+/*----------------------------------------------*/
+
+#po-women .co-dropdown #po-sub-home{
+    position: relative;
+}
+
+#po-women .co-dropdown #po-sub-home #po-right{
+    float: right;
+    margin-right: 15px;
+}
+
+#po-women .co-dropdown #po-home-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: 160px;
+    top: 0px;
+    display: none;
+    animation: top .4s linear;
+}
+
+#po-women .co-dropdown #po-home-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-women .co-dropdown #po-home-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-women .co-dropdown #po-home-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-women .co-dropdown #po-home-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-women .co-dropdown #po-home-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-women .co-dropdown #po-home-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-women .co-dropdown #po-home-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-women .co-dropdown #po-sub-home:hover #po-home-submenu{
+    display: block;
+}
+
+/*---------------------------------------------*/
+/*            Women Shoe SubMenu           */
+/*----------------------------------------------*/
+
+#po-women .co-dropdown #po-sub-shoe{
+    position: relative;
+}
+
+#po-women .co-dropdown #po-sub-shoe #po-right{
+    float: right;
+    margin-right: 15px;
+}
+
+#po-women .co-dropdown #po-shoe-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: 160px;
+    top: 0px;
+    display: none;
+}
+
+#po-women .co-dropdown #po-shoe-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-women .co-dropdown #po-shoe-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-women .co-dropdown #po-shoe-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-women .co-dropdown #po-shoe-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-women .co-dropdown #po-shoe-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-women .co-dropdown #po-shoe-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-women .co-dropdown #po-shoe-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-women .co-dropdown #po-sub-shoe:hover #po-shoe-submenu{
+    display: block;
+}
+
+/* ======================
+     Dropdown Nav Menu - Kid           
+   ====================== */
+
+#po-kid .co-dropdown{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    padding: 20px 0px 30px 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    top: 25px;
+    -webkit-animation: flip .8s;
+    -moz-animation: flip .8s;
+    -ms-animation: flip .8s;
+    animation: flip .8s;
+}
+
+#po-kid .co-dropdown li{
+    padding: 4px;
+    padding-bottom: 14px;
+    position: relative;
+    width: 100%;
+}
+
+#po-kid .co-dropdown li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#po-kid .co-dropdown li a .co-dot{
+     position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-kid .co-dropdown li a .co-list{
+    padding-left: 20px;
+}
+
+#po-kid .co-dropdown li:hover .co-dot{
+    background-color: red;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+
+#po-kid .co-dropdown li:hover .co-list{
+     padding-left: 28px;
+     transition: all .3s linear;
+}
+
+#po-kid .co-dropdown li a:hover .co-list{
+    color: red;
+}
+
+#po-kid .co-drop{
+    display: none;
+}
+
+/*---------------------------------------------*/
+/*      Kid Clothing SubMenu              */
+/*----------------------------------------------*/
+
+#po-kid .co-dropdown #po-sub-home{
+    position: relative;
+}
+
+#po-kid .co-dropdown #po-sub-home #po-right{
+    float: right;
+    margin-right: 15px;
+}
+
+#po-kid .co-dropdown #po-home-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: 160px;
+    top: 0px;
+    display: none;
+    animation: top .4s linear;
+}
+
+#po-kid .co-dropdown #po-home-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-kid .co-dropdown #po-home-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-kid .co-dropdown #po-home-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-kid .co-dropdown #po-home-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-kid .co-dropdown #po-home-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-kid .co-dropdown #po-home-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-kid .co-dropdown #po-home-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-kid .co-dropdown #po-sub-home:hover #po-home-submenu{
+    display: block;
+}
+
+/*---------------------------------------------*/
+/*            Kid Shoe SubMenu           */
+/*----------------------------------------------*/
+
+#po-kid .co-dropdown #po-sub-shoe{
+    position: relative;
+}
+
+#po-kid .co-dropdown #po-sub-shoe #po-right{
+    float: right;
+    margin-right: 15px;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: 160px;
+    top: 0px;
+    display: none;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-kid .co-dropdown #po-shoe-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-kid .co-dropdown #po-sub-shoe:hover #po-shoe-submenu{
+    display: block;
+}
+
+/* ============================
+     Dropdown Nav Menu - Accessory          
+   ============================ */
+
+#po-category .co-dropdown{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    padding: 20px 0px 30px 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    top: 25px;
+    -webkit-animation: flip .8s;
+    -moz-animation: flip .8s;
+    -ms-animation: flip .8s;
+    animation: flip .8s;
+}
+
+#po-category .co-dropdown li{
+    padding: 4px;
+    padding-bottom: 14px;
+    position: relative;
+    width: 100%;
+}
+
+#po-category .co-dropdown li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#po-category .co-dropdown li a .co-dot{
+     position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-category .co-dropdown li a .co-list{
+    padding-left: 20px;
+}
+
+#po-category .co-dropdown li:hover .co-dot{
+    background-color: red;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+
+#po-category .co-dropdown li:hover .co-list{
+     padding-left: 28px;
+     transition: all .3s linear;
+}
+
+#po-category .co-dropdown li a:hover .co-list{
+    color: red;
+}
+
+#po-category .co-drop{
+    display: none;
+}
+
+/*---------------------------------------------*/
+/*      Accessory Jewelry SubMenu   */
+/*----------------------------------------------*/
+
+#po-category .co-dropdown #po-sub-home{
+    position: relative;
+}
+
+#po-category .co-dropdown #po-sub-home #po-right{
+    float: right;
+    margin-right: 15px;
+}
+
+#po-category .co-dropdown #po-home-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: 160px;
+    top: 0px;
+    display: none;
+    animation: top .4s linear;
+}
+
+#po-category .co-dropdown #po-home-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-category .co-dropdown #po-home-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-category .co-dropdown #po-home-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-category .co-dropdown #po-home-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-category .co-dropdown #po-home-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-category .co-dropdown #po-home-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-category .co-dropdown #po-home-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-category .co-dropdown #po-sub-home:hover #po-home-submenu{
+    display: block;
+}
+
+/* ==========================
+     Dropdown Nav Menu - Latest           
+   ========================== */
+
+#po-latest .co-dropdown{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    padding: 20px 0px 30px 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    top: 25px;
+    -webkit-animation: flip .8s;
+    -moz-animation: flip .8s;
+    -ms-animation: flip .8s;
+    animation: flip .8s;
+}
+
+#po-latest .co-dropdown li{
+    padding: 4px;
+    padding-bottom: 14px;
+    position: relative;
+    width: 100%;
+}
+
+#po-latest .co-dropdown li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#po-latest .co-dropdown li a .co-dot{
+     position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    left: 0;
+    margin-top: 10.5px;
+}
+
+#po-latest .co-dropdown li a .co-list{
+    padding-left: 20px;
+}
+
+#po-latest .co-dropdown li:hover .co-dot{
+    background-color: red;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+
+#po-latest .co-dropdown li:hover .co-list{
+     padding-left: 28px;
+     transition: all .3s linear;
+}
+
+#po-latest .co-dropdown li a:hover .co-list{
+    color: red;
+}
+
+#po-latest .co-drop{
+    display: none;
+}
+
+/* ==========================
+     Dropdown Nav Menu - Bar           
+   ========================== */
+
+#po-bar .co-dropdown{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    padding: 20px 0px 30px 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    top: 25px;
+    -webkit-animation: flip .8s;
+    -moz-animation: flip .8s;
+    -ms-animation: flip .8s;
+    animation: flip .8s;
+}
+
+#po-bar .co-dropdown li{
+    padding: 4px;
+    padding-bottom: 14px;
+    position: relative;
+    width: 100%;
+}
+
+#po-bar .co-dropdown li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#po-bar .co-dropdown li a .co-dot{
+     position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    left: 0;
+    margin-top: 5px;
+}
+
+#po-bar .co-dropdown li a .co-list{
+    padding-left: 20px;
+}
+
+#po-bar .co-dropdown li:hover .co-dot{
+    background-color: red;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+
+#po-bar .co-dropdown li:hover .co-list{
+     padding-left: 28px;
+     transition: all .3s linear;
+}
+
+#po-bar .co-dropdown li a:hover .co-list{
+    color: red;
+}
+
+#po-bar .co-drop{
+    display: none;
+}
+
+#po-bar .co-dropdown li nav{
+    margin-top: 20px;
+}
+
+#po-bar .co-dropdown li nav a{
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#po-bar .co-dropdown li nav a:hover{
+    color: red;
+}
+
+/* ==========================
+    3.2.2 Drop Down Animation Area                
+   ==========================*/
+
+@-webkit-keyframes flip{
+     from {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+ -webkit-animation-timing-function: ease-in;
+ animation-timing-function: ease-in;
+ opacity: 0;
+ }
+ 40% {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+ -webkit-animation-timing-function: ease-in;
+ animation-timing-function: ease-in;
+ }
+ 60% {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+ opacity: 1;
+ }
+ 80% {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+ }
+ to {
+ -webkit-transform: perspective(400px);
+ transform: perspective(400px);
+ }
+}
+
+@keyframes flip{
+     from {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+ -webkit-animation-timing-function: ease-in;
+ animation-timing-function: ease-in;
+ opacity: 0;
+ }
+ 40% {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+ -webkit-animation-timing-function: ease-in;
+ animation-timing-function: ease-in;
+ }
+ 60% {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+ opacity: 1;
+ }
+ 80% {
+ -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+ transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+ }
+ to {
+ -webkit-transform: perspective(400px);
+ transform: perspective(400px);
+ }
+}
+
+
+/* ======================
+      3.3 Settings Area                
+   ====================== */
+
+#po-right-nav{
+    width: 15%;
+    float: right;
+    height: 20px;
+    text-align: right;
+    margin-right: 10px;
+    -webkit-animation: bounce 2s;
+    -moz-animation: bounce 2s;
+    -ms-animation: bounce 2s;
+    animation: bounce 2s;
+}
+
+/* ======================
+     Dropdown Nav Menu - Settings           
+   ====================== */
+
+#po-setting .co-dropdown{
+    position: absolute;
+    background-color: black;
+    min-width: 180px;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    padding: 20px 15px 30px 0px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    top: 25px;
+    text-align: left;
+    -webkit-animation: flip .8s;
+    -moz-animation: flip .8s;
+    -ms-animation: flip .8s;
+    animation: flip .8s;
+}
+
+#po-setting .co-dropdown li{
+    padding: 4px;
+    padding-bottom: 14px;
+    position: relative;
+    width: 100%;
+}
+
+#po-setting .co-dropdown li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 30px;
+}
+
+#po-setting .co-dropdown li a .co-dot{
+     position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-setting .co-dropdown li a .co-list{
+    padding-left: 20px;
+}
+
+#po-setting .co-dropdown li:hover .co-dot{
+    background-color: red;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+
+#po-setting .co-dropdown li:hover .co-list{
+     padding-left: 28px;
+     transition: all .3s linear;
+}
+
+#po-setting .co-dropdown li a:hover .co-list{
+    color: red;
+}
+
+#po-setting .co-drop{
+    display: none;
+}
+
+/*---------------------------------------------*/
+/*            Language SubMenu           */
+/*----------------------------------------------*/
+
+#po-setting .co-dropdown #po-sub-home{
+    position: relative;
+}
+
+#po-setting .co-dropdown #po-home-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 180px;
+    height: auto;
+    padding: 20px 15px 30px 0px;
+    cursor: pointer;
+    left: -195px;
+    top: 0px;
+    display: none;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-setting .co-dropdown #po-sub-home:hover #po-home-submenu{
+    display: block;
+}
+
+#po-setting .co-dropdown #po-home-submenu ul li a .co-right{
+    position: absolute;
+    color: red;
+    top: 5px;
+    right: 0;
+    background-color: black;
+}
+
+
+/*---------------------------------------------*/
+/*            Currency SubMenu     */
+/*----------------------------------------------*/
+
+#po-setting .co-dropdown #po-sub-currency{
+    position: relative;
+}
+
+#po-setting .co-dropdown #po-currency-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 180px;
+    padding: 20px 15px 30px 0px;
+    height: auto;
+    cursor: pointer;
+    left: -195px;
+    top: 0px;
+    display: none;
+}
+
+#po-setting .co-dropdown #po-currency-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-setting .co-dropdown #po-currency-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-setting .co-dropdown #po-currency-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-setting .co-dropdown #po-currency-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-setting .co-dropdown #po-currency-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-setting .co-dropdown #po-currency-submenu ul li:hover .co-list{
+    margin-left: 12px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-setting .co-dropdown #po-sub-currency:hover #po-currency-submenu{
+    display: block;
+}
+
+#po-setting .co-dropdown #po-currency-submenu ul li a .co-right{
+    position: absolute;
+    color: red;
+    top: 5px;
+    right: 0;
+    background-color: black;
+}
+
+/*---------------------------------------------*/
+/*            My Account SubMenu         */
+/*----------------------------------------------*/
+
+#po-setting .co-dropdown #po-sub-acc{
+    position: relative;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    height: auto;
+    padding: 20px 15px 30px 25px;
+    cursor: pointer;
+    left: -200px;
+    top: 0px;
+    display: none;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu ul li{
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu ul li a .co-dot{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 10px;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu ul li a .co-list{
+    padding-left: 20px;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu ul li:hover .co-dot{
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+#po-setting .co-dropdown #po-shoe-submenu ul li:hover .co-list{
+    padding-left: 28px;
+    transition: all .3s linear;
+    color: red;
+}
+
+#po-setting .co-dropdown #po-sub-acc:hover #po-shoe-submenu{
+    display: block;
+}
+
+/*---------------------------------------------*/
+/* ---------- Search -----------------------*/
+/*----------------------------------------------*/
+#po-right-nav nav #po-setting,#po-right-nav nav #po-search,
+#po-right-nav nav #po-cart{
+    display: inline-block;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+#po-right-nav nav #po-setting:hover,#po-right-nav nav #po-search:hover,#po-right-nav nav #po-cart:hover{
+    color: rgb(117,76,43,0.6);
+}
+ 
+/* The Search Modal  */
+.co-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 70px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8); 
+}
+
+/* Search Modal Content */
+.co-modal-content {
+    width: 80%;
+    margin: 0 auto;
+    height: 50vh;
+    padding: 30px;
+    background-color: white;
+    -webkit-animation: zoom 2s;
+    -moz-animation: zoom 2s;
+    -ms-animation: zoom 2s;
+    animation: zoom 2s;
+    border-radius: 8px;
+    cursor: auto;
+    position: relative;
+}
+
+.co-modal-content  .co-text {
+    width: 80%;
+    margin: 30px auto;
+    height: 20px;
+    color: black;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 135px;
+}
+
+.co-modal-content .co-search-input{
+    position: relative;
+    margin-top: 70px;
+}
+
+.co-modal-content .co-search-input input[type=text]{
+    float: left;
+    width: 70%;
+    padding: 14px 20px;
+    height: 25px;
+    border-radius: 5px;
+    border: .7px solid grey;
+    margin-left: 107px;
+    font-size: 19px;
+    outline: none;
+}
+
+.co-modal-content #po-cut{
+    font-size: 20px;
+    position: absolute;
+    top: -90px;
+    right: 5px;
+    color: black;
+}
+
+.co-modal-content #po-cut:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.co-modal-content .co-search-input .fa-search{
+    position: absolute;
+    top: 13px;
+    font-size: 24px;
+    color: black;
+    right: 170px;
+    cursor: pointer;
+}
+
+/* Animating Search Modal Content */
+
+@-webkit-keyframes zoom{
+    from{
+        transform: scale(0); opacity: 0;
+    }
+    to{
+        transform: scale(1); opacity: 1;
+    }
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(0); opacity: 0;
+    }
+    to{
+        transform: scale(1); opacity: 1;
+    }
+}
+
+/*---------------------------------------------*/
+/*-------------- Cart ------------------------*/
+/*----------------------------------------------*/
+#po-right-nav nav #po-cart #po-notify{
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    padding: 2px 5px;
+    border-radius: 100%;
+    background-color: wheat;
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* ======================
+      4.   Header Image Area                
+   ====================== */
+
+#po-header-image{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 4vh;
+}
+
+#po-header-image img{
+    width: 100%;
+    height: 100%;
+}
+
+#po-header-image h3{
+    position: absolute;
+    top: 180px;
+    left: 320px;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#po-header-image nav{
+    position: absolute;
+    top: 290px;
+    left: 220px;
+    padding: 10px;
+}
+
+#po-header-image nav a{
+    text-decoration: none;
+    font-size: 17px;
+    color: gray;
+    padding-left: 15px;
+     text-transform: uppercase;
+}
+
+#po-header-image nav #po-tshirt{
+    color: crimson;
+}
+
+/* ======================
+      4.1.   Home Area                
+   ====================== */
+
+#po-header-home{
+    width: 100%;
+    padding: 10px 60px;
+    background-color: gray;
+    margin-bottom: 10vh;
+}
+
+#po-header-home nav{
+    padding-left: 50px;
+}
+
+#po-header-home nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+#po-header-home nav i{
+    color: black;
+    font-size: 12px;
+}
+
+/* ======================
+      5.   Content Area                
+   ====================== */
+
+#po-main-content{
+    width: 94%;
+    height: auto;
+    margin: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 20vh;
+}
+
+/* ======================
+      5.1.   Content Area - Aside              
+   ====================== */
+#po-main-content aside{
+    width: 20%;
+    height: auto;
+    padding: 0 20px;
+}
+
+#po-main-content aside #po-aside-men h3{
+    border-bottom: 2px solid #363636;
+    border-top: 2px solid #363636;
+    color: #363636;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#po-main-content aside #po-aside-men h2{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+#po-main-content aside #po-aside-men p{
+    color: #777777;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+#po-main-content aside #po-aside-size h2{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 15px 0;
+    margin-top: 30px;
+     margin-bottom: 15px;
+}
+
+#po-main-content aside #po-aside-size #po-text-size{
+    color: #777777;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 12px 0;
+}
+
+#po-main-content aside #po-aside-size input[type=checkbox]{
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 3px 0;
+    outline: none;
+    height: 15px;
+    width: 15px;
+}
+
+#po-main-content aside #po-aside-weight h2{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 15px 0;
+    margin-top: 30px;
+     margin-bottom: 15px;
+}
+
+#po-main-content aside #po-aside-weight #po-text-weight{
+    color: #777777;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 12px 0;
+}
+
+#po-main-content aside #po-aside-weight input[type=checkbox]{
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 3px 0;
+    outline: none;
+    height: 15px;
+    width: 15px;
+}
+
+#po-main-content aside #po-aside-sleeve h2{
+     color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 15px 0;
+    margin-top: 30px;
+     margin-bottom: 15px;
+}
+
+#po-main-content aside #po-aside-sleeve #po-text-sleeve{
+    color: #777777;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 12px 0;
+}
+
+#po-main-content aside #po-aside-sleeve input[type=checkbox]{
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 3px 0;
+    outline: none;
+    height: 15px;
+    width: 15px;
+}
+
+#po-main-content aside #po-aside-fabric h2{
+     color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 15px 0;
+    margin-top: 30px;
+     margin-bottom: 15px;
+}
+
+#po-main-content aside #po-aside-fabric #po-text-fabric{
+    color: #777777;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 12px 0;
+}
+
+#po-main-content aside #po-aside-fabric input[type=checkbox]{
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 3px 0;
+    outline: none;
+    height: 15px;
+    width: 15px;
+}
+
+#po-main-content aside #po-aside-color h2{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 15px 0;
+    margin-top: 30px;
+     margin-bottom: 15px;
+}
+
+#po-main-content aside #po-aside-color #po-text-color{
+    color: #777777;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 12px 0;
+}
+
+#po-main-content aside #po-aside-color input[type=checkbox]{
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 3px 0;
+    outline: none;
+    height: 15px;
+    width: 15px;
+}
+
+/* ======================
+      5.2.   Content Area - Content              
+   ====================== */
+#po-main-content #po-content{
+    width: 75%;
+    height: auto;
+}
+
+#po-main-content #po-content #po-content-tshirt{
+    width: 100%;
+    border-bottom: 2px solid #363636;
+    height: 6.4vh;
+    margin-bottom: 10vh;
+}
+
+#po-main-content #po-content #po-content-tshirt::after{
+    content: "";
+    clear: both;
+}
+
+#po-main-content #po-content #po-content-tshirt h2{
+    float: left;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    padding: 0 40px;
+    padding-top: 10px;
+}
+
+#po-main-content #po-content #po-content-tshirt p{
+    float: right;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+    padding: 0 40px;
+    padding-top: 18px;
+}
+
+#po-main-content #po-content #po-item-one{
+    width: 100%;
+    height: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-bottom: 8vh;
+}
+
+#po-main-content #po-content #po-item-one #po-item-img{
+    width: 30%;
+    height: 37vh;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content{
+    width: 65%;
+    height: 35vh;
+}
+
+#po-main-content #po-content #po-item-one #po-item-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content a{
+    color: #363636;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content a:hover{
+    color: crimson;
+    transition: all .4s ease;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-item-price{
+    margin-top: 15px;
+    border-bottom: 1px solid #ededed;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-item-price::after{
+    content: "";
+    clear: both;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-item-price-tag{
+    color: #363636;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-item-rate{
+    float: right;
+    color: red;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content p{
+    color: #757575;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-availability{
+    margin-bottom: 15px;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-availability #po-stock{
+    background-color: #55c65e;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px 8px 4px;
+    margin-right: 30px;
+    cursor: text;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-availability nav{
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-availability input[type=number]{
+    width: 35px;
+    height: 12px;
+    padding: 5px;
+    margin: 0 10px;
+    text-align: left;
+    font-size: 12px;
+    outline: none;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-cart nav{
+    width: 50%;
+    padding: 10px 0;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-cart nav #po-add{
+    text-transform: uppercase;
+    border: 1px dotted #8c8c8c;
+    color: #8c8c8c;
+    font-size: 12px;
+    margin-left: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-cart nav #po-detail{
+    border: 1px dotted #8c8c8c;
+    color: #8c8c8c;
+    font-size: 12px;
+     padding: 10px 15px;
+    cursor: pointer;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-cart nav #po-like{
+    border: 1px dotted #8c8c8c;
+    color: #8c8c8c;
+    font-size: 12px;
+     padding: 10px 15px;
+    cursor: pointer;
+}
+
+#po-main-content #po-content #po-item-one #po-item-content #po-cart nav #po-add:hover,#po-main-content #po-content #po-item-one #po-item-content #po-cart nav #po-detail:hover,#po-main-content #po-content #po-item-one #po-item-content #po-cart nav #po-like:hover{
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#po-main-content #po-content #po-pagination{
+    text-align: right;
+}
+
+#po-main-content #po-content #po-pagination nav{
+    float: right;
+    width: 30%;
+    padding: 10px;
+}
+
+#po-main-content #po-content #po-pagination nav a{
+   border: 1px dotted #8c8c8c;
+    color: #8c8c8c;
+    font-size: 12px;
+    text-align: center;
+     padding: 7px 10px;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 6px 0 6px 0;
+}
+
+#po-main-content #po-content #po-pagination nav a:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#po-main-content #po-content #po-pagination nav #po-prev{
+    cursor: not-allowed;
+     background-color: black;
+    color: white;
+    border: none;
+}
+
+
+/* ======================
+      6.   Footer Area                
+   ====================== */
+
+footer{
+    width: 100%;
+    height: auto;
+   background-color: #171717;
+}
+
+#po-line{
+    border: 1px solid #3b3b3b;
+}
+
+.co-footer-widget{
+    width: 95%;
+    margin: 20px auto;
+    height: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.co-footer-about{
+    width: 27%;
+    height: 48vh;
+}
+
+.co-footer-about h4{
+    color: #919191;
+    cursor: text;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    padding: 50px 0 0 20px;
+}
+
+.co-footer-about p{
+    color: #ddd;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px 0 0 20px;
+}
+
+.co-footer-about .social-icon nav{
+   color: #ddd;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px 0 0 20px;
+}
+
+.co-footer-about .social-icon a {
+    font-size: 0.9em;
+    color: #fff;
+    border: 1px solid transparent;
+    width: 30px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.4em;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 30px;
+    margin: 2px;
+}
+
+.co-footer-about .social-icon a:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+}
+
+.co-footer-about .social-icon a:hover {
+    color: #FF5722;
+}
+
+.co-footer-about .social-icon a:hover:before {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%; 
+    border-radius: 50%;
+	border-color: #FF5722;
+}
+
+.co-footer-about .fa-twitter,.co-footer-about .fa-github{
+    position: absolute;
+    top: 7px;
+    left: 6px; 
+}
+
+.co-footer-about .fa-facebook{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.co-footer-about .fa-instagram{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+   
+.co-footer-category{
+    width: 18%;
+    height: 48vh;
+}
+
+.co-footer-category h4{
+    color: #919191;
+    cursor: text;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    padding: 50px 0 0 0;
+}
+
+.co-footer-category #po-links{
+    line-height: 30px;
+    margin: 0;
+    text-transform: capitalize;
+    padding: 10px 0 0 0;
+}
+
+.co-footer-category #po-links a{
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 300;
+    font-size: 11.5px;
+}
+
+.co-footer-account{
+    width: 18%;
+    height: 48vh;
+}
+
+.co-footer-account h4{
+    color: #919191;
+    cursor: text;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    padding: 50px 0 0 0;
+}
+
+.co-footer-account #po-account{
+    line-height: 30px;
+    margin: 0;
+    text-transform: capitalize;
+    padding: 10px 0 0 0;
+}
+
+.co-footer-account #po-account a{
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 300;
+    font-size: 11.5px;
+}
+
+.co-footer-contact{
+    width: 27%;
+    height: 48vh;
+}
+
+.co-footer-contact h4{
+    color: #919191;
+    cursor: text;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    padding: 50px 0 0 0;
+}
+
+.co-footer-contact #po-footer-contact{
+    line-height: 30px;
+    margin: 0;
+    text-transform: capitalize;
+    padding: 10px 0 0 0;
+}
+
+.co-footer-contact #po-footer-contact a{
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 300;
+    font-size: 11.5px;
+}
+
+.co-footer-contact #po-footer-contact a .fa-address-book,.co-footer-contact #po-footer-contact a .fa-phone,.co-footer-contact #po-footer-contact a .fa-envelope{
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+.co-footer-category #po-links a:hover,.co-footer-account #po-account a:hover{
+    color: #FF5722;
+    transition: all 1s ease;
+}
+
+.co-footer-contact #po-footer-contact a:hover{
+  cursor: text;
+}
+
+.co-footer-links{
+    width: 95%;
+    height: 10vh;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.co-footer-links::after{
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+
+#po-company-name{
+    float: left;
+    width: 30%;
+    padding: 13px 0 0 0;
+    font-size: 11px;
+    color: #ddd;
+}
+
+#po-pablo{
+    color: orangered;
+    text-decoration: none;
+}
+
+#po-pablo:hover{
+    text-decoration: underline;
+}
+
+#po-paypal{
+    float: right;
+    width: 30%;
+    padding: 19px 0 0 0;
+    text-align: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+/* ======================
+      7. Go to up arrow 
+   ====================== */
+
+.po-arrow-head{
+    padding: 10px;
+    background-color: orangered;
+    position: fixed;
+      display: none;
+    color: white;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 30px;
+    -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.po-arrow-head:hover .fa-long-arrow-up{
+    color: black;
+    cursor: pointer;
+    -webkit-animation: hvr-icon-wobble-vertical 1s;
+    -moz-animation: hvr-icon-wobble-vertical 1s;
+    -ms-animation: hvr-icon-wobble-vertical 1s;
+    animation: hvr-icon-wobble-vertical 1s;
+    animation-iteration-count: 3;
+}
+
+@-webkit-keyframes hvr-icon-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes hvr-icon-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* ======================
+      8. Hide Sidnav up 
+   ====================== */
+
+#po-sidenav{
+    display: none !important;
+}
+
+#po-rightSidenav{
+    display: none !imortant;
+}
+
+
+
+
+
+
+
+
+
+
+
+
